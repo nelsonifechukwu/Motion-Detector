@@ -18,14 +18,14 @@
 
 // REPLACE WITH YOUR NETWORK CREDENTIALS
 
-char ssid[] = "iotshowcam";
-char password[] = "iotshowcam";
+char ssid[] = "your ssid";
+char password[] = "your password";
 
 // To send Email using Gmail use port 465 (SSL) and SMTP Server smtp.gmail.com
 // YOU MUST ENABLE less secure app option https://myaccount.google.com/lesssecureapps?pli=1
-#define emailSenderAccount    "iot.showcam@gmail.com"
-#define emailSenderPassword   "esp.cam1?"
-#define emailRecipient        "iot.showcam@gmail.com"
+#define emailSenderAccount    "the senders mail"
+#define emailSenderPassword   "the senders password"
+#define emailRecipient        "the recipients mail"
 #define smtpServer            "smtp.gmail.com"
 #define smtpServerPort         465 //587 //465
 #define emailSubject          "Your cam view"
@@ -119,7 +119,8 @@ void setup() {
     Serial.printf("Camera init failed with error 0x%x", err);
     return;
   }
-  //create interrupt on GPIO 13
+  
+  //create a rising interrupt on GPIO 13
   err = gpio_isr_handler_add(GPIO_NUM_13, &pirdect, (void *) 13);
   if (err != ESP_OK) {
     Serial.printf("handler add failed with error 0x%x \r\n", err);
@@ -160,6 +161,7 @@ void setup() {
 
 
 void loop() {
+  
   if (pirdetect) {
 
     esp_sleep_enable_ext0_wakeup(GPIO_NUM_13, 0);
@@ -171,9 +173,11 @@ void loop() {
       Serial.println("Camera capture failed");
       return;
     }
+    
+    // Path where new picture will be saved in SPIFFs
     String path = "/Sight.jpg";
     File file = SPIFFS.open(path, FILE_WRITE);
-    // Path where new picture will be saved in SD Card
+ 
 
 
 
