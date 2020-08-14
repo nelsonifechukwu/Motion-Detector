@@ -1,2 +1,2 @@
-# ESP32cam-motion-detection
+# ESP32cam-motion-detection + Blynk
 It's built upon the ESP32-CAM board and a PIR sensor module to build a motion-triggered image capturing system that also sends the image to a 3rd party IOT software(Blynk). The board spends most of the time in sleep mode and wakes up to take an image once motion is detected. Once motion is detected, it takes the picture of the intruder or whatever, saves  then using Blynk protocols, it sends the image to the blynk app when connected to the same access point as the ESP board.
