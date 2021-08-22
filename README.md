@@ -15,7 +15,6 @@ The board spends most of the time in sleep mode and wakes up to take an image on
 - Switch
 - Potentiometer and KA317 voltage regulator
 - Wires, soldering and copper through hole PCB
-![image](https://user-images.githubusercontent.com/44223263/130352513-7dc29568-1d4b-45da-8a93-4ed693cc62c2.png)
 
 # How to use
 + Make the necessary connections as shown in the circuit diagram
