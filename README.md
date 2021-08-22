@@ -19,6 +19,6 @@ The board spends most of the time in sleep mode and wakes up to take an image on
 > * Wires, soldering and copper through hole PCB
 
 # How to use
-+ Make the necessary connections as shown in the circuit diagram
-+ Upload .ino file to ESP32
-+ Edit code with your preferred mail, and your ssid credentials
+> + Make the necessary connections as shown in the circuit diagram
+> + Upload .ino file to ESP32
+> + Edit code with your preferred mail, and your ssid credentials
