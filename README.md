@@ -5,7 +5,7 @@ This is a motion detection system built on the ESP32-CAM board and a PIR sensor 
 
 The board spends most of the time in sleep mode and wakes up to take an image once motion is detected. Once motion is detected, an interrupt routine is triggered. It takes the picture of the intruder or whatever, saves it on the file memory system of the board called SPIFFs, then using STMP protocols, it sends the image to a designated mail.
 
-# Materials used in this Project
+> Materials used in this Project
 * ESP32-camera
 * PIR sensor (generic)
 * Power Jack
@@ -16,7 +16,7 @@ The board spends most of the time in sleep mode and wakes up to take an image on
 * Potentiometer and KA317 voltage regulator
 * Wires, soldering and copper through hole PCB
 
-# How to use
+> How to use
 + Make the necessary connections as shown in the circuit diagram
 + Upload .ino file to ESP32
 + Edit code with your preferred mail, and your ssid credentials
