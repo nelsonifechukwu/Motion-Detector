@@ -1,4 +1,5 @@
-![ESP32-CAM-PIR-Motion-Sensor-Wiring](https://user-images.githubusercontent.com/44223263/130352393-a17de108-9452-4c8c-b50e-b2586f79fe3e.jpeg)
+![Picture1](https://user-images.githubusercontent.com/44223263/130352462-f32a7a5e-0e2f-432c-8049-398d41250e65.jpg)
+
 # ESP32cam-motion-detection
 This is a motion detection system built on the ESP32-CAM board and a PIR sensor module that also sends an email with the image as an attachment. 
 
